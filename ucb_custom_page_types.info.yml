@@ -1,0 +1,16 @@
+name: 'Custom Content Types'
+description: 'Provides a set of content types that use paragraphs'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - entity_reference_revisions
+  - field
+  - field_group
+  - node
+  - paragraphs
+  - path
+  - rdf
+  - text
+  - user
+version: '1.0'
+package: 'UCB Custom Page Types'
