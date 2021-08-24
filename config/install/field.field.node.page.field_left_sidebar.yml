@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_left_sidebar
+    - node.type.page
+    - paragraphs.paragraphs_type.slider_image
+  module:
+    - entity_reference_revisions
+id: node.page.field_left_sidebar
+field_name: field_left_sidebar
+entity_type: node
+bundle: page
+label: 'Left Sidebar'
+description: 'Display content to the left of the main content as a sidebar'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles:
+      slider_image: slider_image
+    target_bundles_drag_drop:
+      hero_unit:
+        weight: 5
+        enabled: false
+      slider:
+        weight: 6
+        enabled: false
+      slider_image:
+        enabled: true
+        weight: 7
+      text_block:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions
