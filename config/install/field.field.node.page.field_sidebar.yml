@@ -2,17 +2,17 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_left_sidebar
+    - field.storage.node.field_sidebar
     - node.type.page
     - paragraphs.paragraphs_type.slider_image
   module:
     - entity_reference_revisions
-id: node.page.field_left_sidebar
-field_name: field_left_sidebar
+id: node.page.field_sidebar
+field_name: field_sidebar
 entity_type: node
 bundle: page
-label: 'Left Sidebar'
-description: 'Display content to the left of the main content as a sidebar'
+label: Sidebar
+description: 'Place content in a sidebar next to the main body. The sidebar location can be set in the theme settings.'
 required: false
 translatable: false
 default_value: {  }
@@ -25,15 +25,18 @@ settings:
       slider_image: slider_image
     target_bundles_drag_drop:
       hero_unit:
-        weight: 5
+        weight: 6
         enabled: false
       slider:
-        weight: 6
+        weight: 7
         enabled: false
       slider_image:
         enabled: true
-        weight: 7
-      text_block:
         weight: 8
+      text_block:
+        weight: 9
         enabled: false
+      ucb_page_body:
+        enabled: true
+        weight: 10
 field_type: entity_reference_revisions

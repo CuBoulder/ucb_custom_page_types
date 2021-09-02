@@ -7,7 +7,7 @@ dependencies:
     - field.field.node.page.field_above_content
     - field.field.node.page.field_below_body_block
     - field.field.node.page.field_below_content
-    - field.field.node.page.field_left_sidebar
+    - field.field.node.page.field_sidebar
     - node.type.page
   module:
     - entity_reference_revisions
@@ -61,9 +61,9 @@ content:
       link: ''
     third_party_settings: {  }
     region: content
-  field_left_sidebar:
+  field_sidebar:
     type: entity_reference_revisions_entity_view
-    weight: 2
+    weight: 7
     label: hidden
     settings:
       view_mode: default

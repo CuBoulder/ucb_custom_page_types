@@ -8,7 +8,7 @@ dependencies:
     - field.field.node.page.field_above_content
     - field.field.node.page.field_below_body_block
     - field.field.node.page.field_below_content
-    - field.field.node.page.field_left_sidebar
+    - field.field.node.page.field_sidebar
     - node.type.page
   module:
     - user
@@ -26,4 +26,4 @@ hidden:
   field_above_content: true
   field_below_body_block: true
   field_below_content: true
-  field_left_sidebar: true
+  field_sidebar: true
