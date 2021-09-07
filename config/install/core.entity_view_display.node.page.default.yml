@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.page.field_sidebar
     - node.type.page
   module:
-    - entity_reference_revisions
     - text
     - user
 id: node.page.default
@@ -19,60 +18,18 @@ bundle: page
 mode: default
 content:
   body:
-    weight: 3
     label: hidden
-    settings: {  }
-    third_party_settings: {  }
     type: text_default
-    region: content
-  field_above_body_block:
-    type: entity_reference_revisions_entity_view
-    weight: 5
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: content
-  field_above_content:
-    type: entity_reference_revisions_entity_view
-    weight: 1
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: content
-  field_below_body_block:
-    type: entity_reference_revisions_entity_view
-    weight: 6
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: content
-  field_below_content:
-    type: entity_reference_revisions_entity_view
-    weight: 4
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: content
-  field_sidebar:
-    type: entity_reference_revisions_entity_view
-    weight: 7
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: content
-  links:
-    weight: 0
+    weight: 100
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+  links:
+    weight: 101
+    region: content
+hidden:
+  field_above_body_block: true
+  field_above_content: true
+  field_below_body_block: true
+  field_below_content: true
+  field_sidebar: true
