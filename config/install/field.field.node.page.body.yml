@@ -11,12 +11,12 @@ field_name: body
 entity_type: node
 bundle: page
 label: Body
-description: 'The main content of this page'
+description: ''
 required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  display_summary: false
+  display_summary: true
   required_summary: false
 field_type: text_with_summary
