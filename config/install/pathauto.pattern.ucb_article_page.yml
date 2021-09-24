@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: ucb_article_page
+label: 'UCB Article page'
+type: 'canonical_entities:node'
+pattern: '/news/[node:title]'
+selection_criteria:
+  8bb7cc75-690c-45d8-9e1f-3e78f5feb4b4:
+    id: node_type
+    bundles:
+      ucb_article: ucb_article
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 8bb7cc75-690c-45d8-9e1f-3e78f5feb4b4
+selection_logic: and
+weight: -5
+relationships: {  }
