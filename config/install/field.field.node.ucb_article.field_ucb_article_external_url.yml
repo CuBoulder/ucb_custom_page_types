@@ -10,7 +10,7 @@ id: node.ucb_article.field_ucb_article_external_url
 field_name: field_ucb_article_external_url
 entity_type: node
 bundle: ucb_article
-label: 'External URL'
+label: 'External Link'
 description: 'Add a url to a news/articles on another website.  '
 required: false
 translatable: false
