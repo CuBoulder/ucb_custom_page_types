@@ -18,27 +18,90 @@ third_party_settings:
   field_group:
     group_main_content:
       children:
-        - field_above_body_block
         - body
-        - field_below_body_block
-      parent_name: ''
-      weight: 8
+      parent_name: group_ucb_basic_main
+      weight: 7
       format_type: details
       region: content
       format_settings:
+        description: 'Main content for the page'
+        open: true
+        required_fields: true
         id: ''
         classes: ''
-        description: 'Main content for the page'
-        open: false
-        required_fields: true
+        show_empty_fields: false
       label: 'Main Content'
+    group_tabs:
+      children:
+        - group_pre_content
+        - group_ucb_basic_main
+        - group_post_content
+      parent_name: ''
+      weight: 1
+      format_type: tabs
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        direction: horizontal
+        width_breakpoint: 640
+      label: Tabs
+    group_pre_content:
+      children:
+        - field_above_content
+        - field_above_body_block
+      parent_name: group_tabs
+      weight: 1
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: 'Content that is displayed before the main content area.  '
+        formatter: closed
+        required_fields: true
+      label: Pre-Content
+    group_ucb_basic_main:
+      children:
+        - group_main_content
+      parent_name: group_tabs
+      weight: 2
+      format_type: tab
+      region: content
+      format_settings:
+        description: 'Primary content for this page.  '
+        formatter: open
+        required_fields: true
+        id: ''
+        classes: ''
+        show_empty_fields: false
+      label: 'Main Content'
+    group_post_content:
+      children:
+        - field_below_body_block
+        - field_below_content
+        - field_sidebar
+      parent_name: group_tabs
+      weight: 3
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: 'Content to be displayed after the primary content.  '
+        formatter: closed
+        required_fields: true
+      label: Post-Content
 id: node.page.default
 targetEntityType: node
 bundle: page
 mode: default
 content:
   body:
-    weight: 10
+    weight: 2
     settings:
       rows: 9
       summary_rows: 3
@@ -49,13 +112,13 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 2
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   field_above_body_block:
     type: entity_reference_paragraphs
-    weight: 9
+    weight: 3
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -67,7 +130,7 @@ content:
     region: content
   field_above_content:
     type: paragraphs
-    weight: 6
+    weight: 2
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -85,7 +148,7 @@ content:
     region: content
   field_below_body_block:
     type: entity_reference_paragraphs
-    weight: 11
+    weight: 3
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -97,7 +160,7 @@ content:
     region: content
   field_below_content:
     type: paragraphs
-    weight: 9
+    weight: 4
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -115,7 +178,7 @@ content:
     region: content
   field_sidebar:
     type: paragraphs
-    weight: 7
+    weight: 5
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -137,18 +200,11 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 3
-    region: content
-    third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 10
+    weight: 6
     region: content
     third_party_settings: {  }
   sticky:
@@ -168,7 +224,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 1
+    weight: 2
     region: content
     settings:
       match_operator: CONTAINS
@@ -176,4 +232,5 @@ content:
       placeholder: ''
       match_limit: 10
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  promote: true
