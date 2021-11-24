@@ -11,7 +11,7 @@ field_name: field_ucb_article_external_url
 entity_type: node
 bundle: ucb_article
 label: 'External Link'
-description: 'Add a url to a news/articles on another website.  '
+description: 'Add a url to a news/articles on another website. This article page will then redirect to the specified link.'
 required: false
 translatable: false
 default_value: {  }
