@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.storage.node.field_below_body_block
     - node.type.page
+    - paragraphs.paragraphs_type.article_content
     - paragraphs.paragraphs_type.slider_image
   module:
     - entity_reference_revisions
@@ -22,8 +23,12 @@ settings:
   handler_settings:
     negate: 1
     target_bundles:
+      article_content: article_content
       slider_image: slider_image
     target_bundles_drag_drop:
+      article_content:
+        enabled: true
+        weight: 6
       hero_unit:
         weight: 6
         enabled: false
