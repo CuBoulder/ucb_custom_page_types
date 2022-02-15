@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.content_row
     - paragraphs.paragraphs_type.hero_unit
     - paragraphs.paragraphs_type.slider
+    - paragraphs.paragraphs_type.social_media_icons_block
     - paragraphs.paragraphs_type.text_block
   module:
     - entity_reference_revisions
@@ -30,6 +31,7 @@ settings:
       text_block: text_block
       content_grid: content_grid
       content_row: content_row
+      social_media_icons_block: social_media_icons_block
     negate: 0
     target_bundles_drag_drop:
       article_content:
@@ -38,23 +40,17 @@ settings:
       blockquote:
         weight: 9
         enabled: false
-      cards_grid_layout:
-        weight: 22
-        enabled: false
-      columns_grid_layout:
-        weight: 13
-        enabled: false
       content_grid:
         weight: 14
         enabled: true
       content_row:
         weight: 27
         enabled: true
-      features_grid_layout:
-        weight: 25
+      expandable_content:
+        weight: 19
         enabled: false
-      features_grid_layout_content:
-        weight: 26
+      expandable_content_text:
+        weight: 20
         enabled: false
       grid_layout_content:
         weight: 15
@@ -65,15 +61,6 @@ settings:
       media:
         weight: 11
         enabled: false
-      offset_grid_layout:
-        weight: 30
-        enabled: false
-      overlay_grid_layout:
-        weight: 31
-        enabled: false
-      overlay_grid_layout_content:
-        weight: 32
-        enabled: false
       row_layout_content:
         weight: 36
         enabled: false
@@ -83,16 +70,10 @@ settings:
       slider_image:
         weight: 7
         enabled: false
-      teaser_alternate_row_layout:
-        weight: 39
-        enabled: false
-      teaser_row_layout:
-        weight: 40
-        enabled: false
+      social_media_icons_block:
+        weight: 27
+        enabled: true
       text_block:
         weight: 8
         enabled: true
-      tiles_row_layout:
-        weight: 42
-        enabled: false
 field_type: entity_reference_revisions
