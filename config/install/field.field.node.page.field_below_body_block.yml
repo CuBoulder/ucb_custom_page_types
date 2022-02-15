@@ -6,7 +6,6 @@ dependencies:
     - node.type.page
     - paragraphs.paragraphs_type.content_grid
     - paragraphs.paragraphs_type.content_row
-    - paragraphs.paragraphs_type.expandable_content
     - paragraphs.paragraphs_type.hero_unit
     - paragraphs.paragraphs_type.slider
     - paragraphs.paragraphs_type.text_block
@@ -31,7 +30,6 @@ settings:
       text_block: text_block
       content_grid: content_grid
       content_row: content_row
-      expandable_content: expandable_content
     negate: 0
     target_bundles_drag_drop:
       article_content:
@@ -52,12 +50,6 @@ settings:
       content_row:
         weight: 27
         enabled: true
-      expandable_content:
-        weight: 33
-        enabled: true
-      expandable_content_text:
-        weight: 34
-        enabled: false
       features_grid_layout:
         weight: 26
         enabled: false
@@ -91,14 +83,8 @@ settings:
       slider_image:
         weight: 8
         enabled: false
-      teaser_alternate_grid_layout:
-        weight: 46
-        enabled: false
       teaser_alternate_row_layout:
         weight: 39
-        enabled: false
-      teaser_grid_layout:
-        weight: 48
         enabled: false
       teaser_row_layout:
         weight: 40
@@ -106,9 +92,6 @@ settings:
       text_block:
         weight: 9
         enabled: true
-      tiles_grid_layout:
-        weight: 51
-        enabled: false
       tiles_row_layout:
         weight: 42
         enabled: false

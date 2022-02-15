@@ -20,5 +20,5 @@ dependencies:
   - text
   - ucb_custom_paragraphs
   - user
-version: '1.0.9'
+version: '1.0.8'
 package: 'UCB Custom Page Types'
