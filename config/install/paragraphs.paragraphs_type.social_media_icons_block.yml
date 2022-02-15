@@ -5,5 +5,5 @@ id: social_media_icons_block
 label: 'Social Media Icons Block'
 icon_uuid: null
 icon_default: null
-description: 'Creates a row  or column of social media icons'
+description: 'A paragraph that stores social media icons.'
 behavior_plugins: {  }
