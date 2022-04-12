@@ -34,8 +34,8 @@ settings:
       text_block: text_block
       content_grid: content_grid
       expandable_content: expandable_content
-      events_calendar: events_calendar
       image_gallery: image_gallery
+      events_calendar: events_calendar
       content_row: content_row
       social_media_icons_block: social_media_icons_block
     negate: 0
