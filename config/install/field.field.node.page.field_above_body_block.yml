@@ -6,6 +6,7 @@ dependencies:
     - node.type.page
     - paragraphs.paragraphs_type.content_grid
     - paragraphs.paragraphs_type.content_row
+    - paragraphs.paragraphs_type.events_calendar
     - paragraphs.paragraphs_type.expandable_content
     - paragraphs.paragraphs_type.hero_unit
     - paragraphs.paragraphs_type.image_gallery
@@ -33,6 +34,7 @@ settings:
       text_block: text_block
       content_grid: content_grid
       expandable_content: expandable_content
+      events_calendar: events_calendar
       image_gallery: image_gallery
       content_row: content_row
       social_media_icons_block: social_media_icons_block
@@ -49,6 +51,9 @@ settings:
         enabled: true
       content_row:
         weight: 27
+        enabled: true
+      events_calendar:
+        weight: 21
         enabled: true
       expandable_content:
         weight: 19
