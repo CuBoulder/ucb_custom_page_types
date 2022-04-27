@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_newsletter_block_text_one
+    - node.type.ucb_newsletter
+  module:
+    - text
+id: node.ucb_newsletter.field_newsletter_block_text_one
+field_name: field_newsletter_block_text_one
+entity_type: node
+bundle: ucb_newsletter
+label: 'First Block Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

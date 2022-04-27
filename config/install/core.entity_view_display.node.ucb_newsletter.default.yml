@@ -1,0 +1,91 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ucb_newsletter.field_newsletter_block_text_one
+    - field.field.node.ucb_newsletter.field_newsletter_block_text_two
+    - field.field.node.ucb_newsletter.field_newsletter_block_title_one
+    - field.field.node.ucb_newsletter.field_newsletter_block_title_two
+    - field.field.node.ucb_newsletter.field_newsletter_intro_body
+    - field.field.node.ucb_newsletter.field_newsletter_intro_image
+    - field.field.node.ucb_newsletter.field_newsletter_section_content
+    - field.field.node.ucb_newsletter.field_newsletter_type
+    - node.type.ucb_newsletter
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.ucb_newsletter.default
+targetEntityType: node
+bundle: ucb_newsletter
+mode: default
+content:
+  field_newsletter_block_text_one:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_newsletter_block_text_two:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_newsletter_block_title_one:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_newsletter_block_title_two:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_newsletter_intro_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_newsletter_intro_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: focal_image_render
+      link: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_newsletter_section_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_newsletter_type:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

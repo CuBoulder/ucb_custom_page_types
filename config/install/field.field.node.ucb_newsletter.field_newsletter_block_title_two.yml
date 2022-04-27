@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_newsletter_block_title_two
+    - node.type.ucb_newsletter
+id: node.ucb_newsletter.field_newsletter_block_title_two
+field_name: field_newsletter_block_title_two
+entity_type: node
+bundle: ucb_newsletter
+label: 'Second Block Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
