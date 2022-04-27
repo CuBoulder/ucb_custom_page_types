@@ -2,5 +2,5 @@
     "name": "cu-boulder/ucb_custom_page_types",
     "description": "Custom content types to be used for site building",
     "license": "MIT",
-    "type": "drupal-module"
+    "type": "drupal-custom-module"
 }
