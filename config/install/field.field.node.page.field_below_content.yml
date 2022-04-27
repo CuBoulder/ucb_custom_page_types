@@ -13,6 +13,7 @@ dependencies:
     - paragraphs.paragraphs_type.slider
     - paragraphs.paragraphs_type.social_media_icons_block
     - paragraphs.paragraphs_type.text_block
+    - paragraphs.paragraphs_type.ucb_video_reveal
   module:
     - entity_reference_revisions
 id: node.page.field_below_content
@@ -38,6 +39,7 @@ settings:
       image_gallery: image_gallery
       content_row: content_row
       social_media_icons_block: social_media_icons_block
+      ucb_video_reveal: ucb_video_reveal
     negate: 0
     target_bundles_drag_drop:
       article_content:
@@ -87,5 +89,8 @@ settings:
         enabled: true
       text_block:
         weight: 8
+        enabled: true
+      ucb_video_reveal:
+        weight: 34
         enabled: true
 field_type: entity_reference_revisions
