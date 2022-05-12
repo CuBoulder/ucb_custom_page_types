@@ -4,7 +4,7 @@ dependencies:
   config:
     - field.storage.node.field_newsletter_section_content
     - node.type.ucb_newsletter
-    - paragraphs.paragraphs_type.newsletter_section_content
+    - paragraphs.paragraphs_type.newsletter_section
   module:
     - entity_reference_revisions
 id: node.ucb_newsletter.field_newsletter_section_content
@@ -21,7 +21,7 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      newsletter_section_content: newsletter_section_content
+      newsletter_section: newsletter_section
     negate: 0
     target_bundles_drag_drop:
       article_content:
@@ -57,9 +57,15 @@ settings:
       media:
         weight: 28
         enabled: false
+      newsletter_section:
+        weight: 31
+        enabled: true
+      newsletter_section_article:
+        weight: 32
+        enabled: false
       newsletter_section_content:
         weight: 29
-        enabled: true
+        enabled: false
       row_layout_content:
         weight: 30
         enabled: false
