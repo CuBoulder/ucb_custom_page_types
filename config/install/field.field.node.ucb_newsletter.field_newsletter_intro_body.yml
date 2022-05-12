@@ -11,7 +11,7 @@ field_name: field_newsletter_intro_body
 entity_type: node
 bundle: ucb_newsletter
 label: 'Intro Text'
-description: ''
+description: 'Text block that will be displayed with the intro image above all other content'
 required: false
 translatable: false
 default_value: {  }

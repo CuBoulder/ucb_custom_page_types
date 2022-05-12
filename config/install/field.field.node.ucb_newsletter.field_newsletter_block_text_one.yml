@@ -11,7 +11,7 @@ field_name: field_newsletter_block_text_one
 entity_type: node
 bundle: ucb_newsletter
 label: 'First Block Text'
-description: ''
+description: 'Left hand text block that will display beneath Sections'
 required: false
 translatable: false
 default_value: {  }

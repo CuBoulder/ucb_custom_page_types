@@ -10,8 +10,8 @@ field_name: field_newsletter_type
 entity_type: node
 bundle: ucb_newsletter
 label: 'Newsletter Type'
-description: ''
-required: false
+description: "Taxonomy label used for the name of the newsletter\r\nTo use create a new Newsletter taxonomy item and then search for it in this bar"
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

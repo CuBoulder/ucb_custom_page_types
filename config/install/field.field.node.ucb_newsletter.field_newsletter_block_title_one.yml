@@ -9,7 +9,7 @@ field_name: field_newsletter_block_title_one
 entity_type: node
 bundle: ucb_newsletter
 label: 'First Block Title'
-description: ''
+description: 'Left hand title block that will display beneath Sections'
 required: false
 translatable: false
 default_value: {  }

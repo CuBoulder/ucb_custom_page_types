@@ -12,7 +12,7 @@ field_name: field_newsletter_section_content
 entity_type: node
 bundle: ucb_newsletter
 label: 'Section Content'
-description: ''
+description: 'Content block that allows you to either create your own newsletter content, as well as link to relevant articles.'
 required: false
 translatable: false
 default_value: {  }
