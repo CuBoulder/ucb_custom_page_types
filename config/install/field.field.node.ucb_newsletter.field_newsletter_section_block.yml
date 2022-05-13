@@ -11,8 +11,8 @@ id: node.ucb_newsletter.field_newsletter_section_block
 field_name: field_newsletter_section_block
 entity_type: node
 bundle: ucb_newsletter
-label: 'Newsletter section block'
-description: ''
+label: 'Section Content'
+description: 'Section where you can either show articles related to your newsletter or create custom content.'
 required: false
 translatable: false
 default_value: {  }

@@ -54,7 +54,7 @@ third_party_settings:
         required_fields: true
     group_newsletter_sections:
       children:
-        - field_newsletter_section_content
+        - field_newsletter_section_block
       label: Sections
       region: content
       parent_name: group_newsletter_tabs
