@@ -2,17 +2,17 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_newsletter_section_content
+    - field.storage.node.field_newsletter_section_block
     - node.type.ucb_newsletter
     - paragraphs.paragraphs_type.newsletter_section
   module:
     - entity_reference_revisions
-id: node.ucb_newsletter.field_newsletter_section_content
-field_name: field_newsletter_section_content
+id: node.ucb_newsletter.field_newsletter_section_block
+field_name: field_newsletter_section_block
 entity_type: node
 bundle: ucb_newsletter
-label: 'Section Content'
-description: 'Content block that allows you to either create your own newsletter content, as well as link to relevant articles.'
+label: 'Newsletter section block'
+description: ''
 required: false
 translatable: false
 default_value: {  }
@@ -25,37 +25,37 @@ settings:
     negate: 0
     target_bundles_drag_drop:
       article_content:
-        weight: 18
-        enabled: false
-      blockquote:
-        weight: 19
-        enabled: false
-      content_grid:
         weight: 20
         enabled: false
-      content_row:
+      blockquote:
         weight: 21
         enabled: false
-      events_calendar:
+      content_grid:
         weight: 22
         enabled: false
-      expandable_content:
+      content_row:
         weight: 23
         enabled: false
-      expandable_content_text:
+      events_calendar:
         weight: 24
         enabled: false
-      grid_layout_content:
+      expandable_content:
         weight: 25
         enabled: false
-      hero_unit:
+      expandable_content_text:
         weight: 26
         enabled: false
-      image_gallery:
+      grid_layout_content:
         weight: 27
         enabled: false
-      media:
+      hero_unit:
         weight: 28
+        enabled: false
+      image_gallery:
+        weight: 29
+        enabled: false
+      media:
+        weight: 30
         enabled: false
       newsletter_section:
         weight: 31
@@ -64,21 +64,21 @@ settings:
         weight: 32
         enabled: false
       newsletter_section_content:
-        weight: 29
-        enabled: false
-      row_layout_content:
-        weight: 30
-        enabled: false
-      slider:
-        weight: 31
-        enabled: false
-      slider_image:
-        weight: 32
-        enabled: false
-      social_media_icons_block:
         weight: 33
         enabled: false
-      text_block:
+      row_layout_content:
         weight: 34
+        enabled: false
+      slider:
+        weight: 35
+        enabled: false
+      slider_image:
+        weight: 36
+        enabled: false
+      social_media_icons_block:
+        weight: 37
+        enabled: false
+      text_block:
+        weight: 38
         enabled: false
 field_type: entity_reference_revisions

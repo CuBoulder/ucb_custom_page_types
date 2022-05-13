@@ -9,7 +9,7 @@ dependencies:
     - field.field.node.ucb_newsletter.field_newsletter_block_title_two
     - field.field.node.ucb_newsletter.field_newsletter_intro_body
     - field.field.node.ucb_newsletter.field_newsletter_intro_image
-    - field.field.node.ucb_newsletter.field_newsletter_section_content
+    - field.field.node.ucb_newsletter.field_newsletter_section_block
     - field.field.node.ucb_newsletter.field_newsletter_type
     - node.type.ucb_newsletter
   module:
@@ -31,5 +31,5 @@ hidden:
   field_newsletter_block_title_two: true
   field_newsletter_intro_body: true
   field_newsletter_intro_image: true
-  field_newsletter_section_content: true
+  field_newsletter_section_block: true
   field_newsletter_type: true

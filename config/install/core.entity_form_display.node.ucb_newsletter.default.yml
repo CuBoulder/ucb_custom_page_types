@@ -8,7 +8,7 @@ dependencies:
     - field.field.node.ucb_newsletter.field_newsletter_block_title_two
     - field.field.node.ucb_newsletter.field_newsletter_intro_body
     - field.field.node.ucb_newsletter.field_newsletter_intro_image
-    - field.field.node.ucb_newsletter.field_newsletter_section_content
+    - field.field.node.ucb_newsletter.field_newsletter_section_block
     - field.field.node.ucb_newsletter.field_newsletter_type
     - node.type.ucb_newsletter
   module:
@@ -151,9 +151,9 @@ content:
     settings:
       media_types: {  }
     third_party_settings: {  }
-  field_newsletter_section_content:
+  field_newsletter_section_block:
     type: paragraphs
-    weight: 22
+    weight: 26
     region: content
     settings:
       title: Paragraph

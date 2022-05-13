@@ -8,7 +8,7 @@ dependencies:
     - field.field.node.ucb_newsletter.field_newsletter_block_title_two
     - field.field.node.ucb_newsletter.field_newsletter_intro_body
     - field.field.node.ucb_newsletter.field_newsletter_intro_image
-    - field.field.node.ucb_newsletter.field_newsletter_section_content
+    - field.field.node.ucb_newsletter.field_newsletter_section_block
     - field.field.node.ucb_newsletter.field_newsletter_type
     - node.type.ucb_newsletter
   module:
@@ -66,14 +66,14 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_newsletter_section_content:
+  field_newsletter_section_block:
     type: entity_reference_revisions_entity_view
-    label: hidden
+    label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 3
+    weight: 8
     region: content
   field_newsletter_type:
     type: entity_reference_label
