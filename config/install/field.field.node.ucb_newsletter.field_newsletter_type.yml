@@ -10,7 +10,7 @@ field_name: field_newsletter_type
 entity_type: node
 bundle: ucb_newsletter
 label: 'Newsletter Type'
-description: "Taxonomy label used for the name of the newsletter\r\nTo use create a new Newsletter taxonomy item and then search for it in this bar"
+description: 'Taxonomy label used for the name of the newsletter'
 required: true
 translatable: false
 default_value: {  }
@@ -23,6 +23,6 @@ settings:
     sort:
       field: name
       direction: asc
-    auto_create: false
+    auto_create: true
     auto_create_bundle: ''
 field_type: entity_reference
