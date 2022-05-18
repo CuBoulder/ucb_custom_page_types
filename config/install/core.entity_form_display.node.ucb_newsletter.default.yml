@@ -8,6 +8,10 @@ dependencies:
     - field.field.node.ucb_newsletter.field_newsletter_block_title_two
     - field.field.node.ucb_newsletter.field_newsletter_intro_body
     - field.field.node.ucb_newsletter.field_newsletter_intro_image
+    - field.field.node.ucb_newsletter.field_newsletter_promo_image_one
+    - field.field.node.ucb_newsletter.field_newsletter_promo_image_two
+    - field.field.node.ucb_newsletter.field_newsletter_promo_text_one
+    - field.field.node.ucb_newsletter.field_newsletter_promo_text_two
     - field.field.node.ucb_newsletter.field_newsletter_section_block
     - field.field.node.ucb_newsletter.field_newsletter_type
     - node.type.ucb_newsletter
@@ -86,18 +90,22 @@ third_party_settings:
         description: ''
         required_fields: true
     group_newsletter_ads_promos:
-      children: {  }
+      children:
+        - field_newsletter_promo_image_one
+        - field_newsletter_promo_text_one
+        - field_newsletter_promo_image_two
+        - field_newsletter_promo_text_two
       label: Ads/Promos
-      region: hidden
+      region: content
       parent_name: group_newsletter_tabs
-      weight: 6
+      weight: 26
       format_type: tab
       format_settings:
         classes: ''
         show_empty_fields: false
         id: ''
         formatter: closed
-        description: ''
+        description: 'The first promo in this section will display above the Blocks section and the second promo will display below the block section'
         required_fields: true
 id: node.ucb_newsletter.default
 targetEntityType: node
@@ -150,6 +158,36 @@ content:
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  field_newsletter_promo_image_one:
+    type: media_library_widget
+    weight: 3
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_newsletter_promo_image_two:
+    type: media_library_widget
+    weight: 5
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_newsletter_promo_text_one:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_newsletter_promo_text_two:
+    type: text_textarea
+    weight: 6
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
   field_newsletter_section_block:
     type: paragraphs
