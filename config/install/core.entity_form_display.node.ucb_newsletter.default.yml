@@ -10,13 +10,14 @@ dependencies:
     - field.field.node.ucb_newsletter.field_newsletter_intro_image
     - field.field.node.ucb_newsletter.field_newsletter_promo_image_one
     - field.field.node.ucb_newsletter.field_newsletter_promo_image_two
-    - field.field.node.ucb_newsletter.field_newsletter_promo_text_one
-    - field.field.node.ucb_newsletter.field_newsletter_promo_text_two
+    - field.field.node.ucb_newsletter.field_newsletter_promo_link_one
+    - field.field.node.ucb_newsletter.field_newsletter_promo_link_two
     - field.field.node.ucb_newsletter.field_newsletter_section_block
     - field.field.node.ucb_newsletter.field_newsletter_type
     - node.type.ucb_newsletter
   module:
     - field_group
+    - link
     - media_library
     - paragraphs
     - text
@@ -92,9 +93,9 @@ third_party_settings:
     group_newsletter_ads_promos:
       children:
         - field_newsletter_promo_image_one
-        - field_newsletter_promo_text_one
+        - field_newsletter_promo_link_one
         - field_newsletter_promo_image_two
-        - field_newsletter_promo_text_two
+        - field_newsletter_promo_link_two
       label: Ads/Promos
       region: content
       parent_name: group_newsletter_tabs
@@ -173,21 +174,21 @@ content:
     settings:
       media_types: {  }
     third_party_settings: {  }
-  field_newsletter_promo_text_one:
-    type: text_textarea
+  field_newsletter_promo_link_one:
+    type: link_default
     weight: 4
     region: content
     settings:
-      rows: 5
-      placeholder: ''
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
-  field_newsletter_promo_text_two:
-    type: text_textarea
+  field_newsletter_promo_link_two:
+    type: link_default
     weight: 6
     region: content
     settings:
-      rows: 5
-      placeholder: ''
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
   field_newsletter_section_block:
     type: paragraphs

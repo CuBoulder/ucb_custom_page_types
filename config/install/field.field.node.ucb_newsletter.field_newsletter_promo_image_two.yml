@@ -10,7 +10,7 @@ field_name: field_newsletter_promo_image_two
 entity_type: node
 bundle: ucb_newsletter
 label: 'Second Promo Image'
-description: "This image will display below the blocks section with additional text.\r\nIf only the image is chosen it will take the full width."
+description: 'This image will display below the blocks section and be linked.'
 required: false
 translatable: false
 default_value: {  }

@@ -11,8 +11,8 @@ dependencies:
     - field.field.node.ucb_newsletter.field_newsletter_intro_image
     - field.field.node.ucb_newsletter.field_newsletter_promo_image_one
     - field.field.node.ucb_newsletter.field_newsletter_promo_image_two
-    - field.field.node.ucb_newsletter.field_newsletter_promo_text_one
-    - field.field.node.ucb_newsletter.field_newsletter_promo_text_two
+    - field.field.node.ucb_newsletter.field_newsletter_promo_link_one
+    - field.field.node.ucb_newsletter.field_newsletter_promo_link_two
     - field.field.node.ucb_newsletter.field_newsletter_section_block
     - field.field.node.ucb_newsletter.field_newsletter_type
     - node.type.ucb_newsletter
@@ -37,7 +37,7 @@ hidden:
   field_newsletter_intro_image: true
   field_newsletter_promo_image_one: true
   field_newsletter_promo_image_two: true
-  field_newsletter_promo_text_one: true
-  field_newsletter_promo_text_two: true
+  field_newsletter_promo_link_one: true
+  field_newsletter_promo_link_two: true
   field_newsletter_section_block: true
   field_newsletter_type: true

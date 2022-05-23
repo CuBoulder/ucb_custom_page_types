@@ -10,13 +10,14 @@ dependencies:
     - field.field.node.ucb_newsletter.field_newsletter_intro_image
     - field.field.node.ucb_newsletter.field_newsletter_promo_image_one
     - field.field.node.ucb_newsletter.field_newsletter_promo_image_two
-    - field.field.node.ucb_newsletter.field_newsletter_promo_text_one
-    - field.field.node.ucb_newsletter.field_newsletter_promo_text_two
+    - field.field.node.ucb_newsletter.field_newsletter_promo_link_one
+    - field.field.node.ucb_newsletter.field_newsletter_promo_link_two
     - field.field.node.ucb_newsletter.field_newsletter_section_block
     - field.field.node.ucb_newsletter.field_newsletter_type
     - node.type.ucb_newsletter
   module:
     - entity_reference_revisions
+    - link
     - text
     - user
 id: node.ucb_newsletter.default
@@ -88,19 +89,29 @@ content:
     third_party_settings: {  }
     weight: 10
     region: content
-  field_newsletter_promo_text_one:
-    type: text_default
+  field_newsletter_promo_link_one:
+    type: link
     label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 11
-    region: content
-  field_newsletter_promo_text_two:
-    type: text_default
-    label: hidden
-    settings: {  }
+    settings:
+      trim_length: 80
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
     third_party_settings: {  }
     weight: 12
+    region: content
+  field_newsletter_promo_link_two:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 11
     region: content
   field_newsletter_section_block:
     type: entity_reference_revisions_entity_view

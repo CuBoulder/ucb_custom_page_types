@@ -10,7 +10,7 @@ field_name: field_newsletter_promo_image_one
 entity_type: node
 bundle: ucb_newsletter
 label: 'First Promo Image'
-description: "This image will display above the blocks section with additional text.\r\nIf only the image is chosen it will take the full width."
+description: 'This image will display above the blocks section and be linked.'
 required: false
 translatable: false
 default_value: {  }
