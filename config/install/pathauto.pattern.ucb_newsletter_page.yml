@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: ucb_newsletter_page
+label: 'UCB Newsletter Page'
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  5e7f039c-6a5f-44fe-8da8-33ee42374b43:
+    id: node_type
+    negate: false
+    uuid: 5e7f039c-6a5f-44fe-8da8-33ee42374b43
+    context_mapping:
+      node: node
+    bundles:
+      ucb_newsletter: ucb_newsletter
+selection_logic: and
+weight: -5
+relationships: {  }

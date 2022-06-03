@@ -85,7 +85,7 @@ content:
     weight: 105
     region: content
   field_ucb_article_thumbnail:
-    type: media_thumbnail
+    type: entity_reference_entity_view
     label: hidden
     settings:
       image_link: ''
