@@ -9,8 +9,8 @@ id: node.how_to_page.field_how_to_initial_image
 field_name: field_how_to_initial_image
 entity_type: node
 bundle: how_to_page
-label: 'How-To Initial Image'
-description: ''
+label: 'Initial Image'
+description: 'An image to introduce the project/process. An example may be the finished project/process'
 required: false
 translatable: false
 default_value: {  }

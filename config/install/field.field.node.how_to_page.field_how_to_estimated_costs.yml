@@ -8,8 +8,8 @@ id: node.how_to_page.field_how_to_estimated_costs
 field_name: field_how_to_estimated_costs
 entity_type: node
 bundle: how_to_page
-label: 'How-To Estimated Costs'
-description: ''
+label: 'Estimated Costs'
+description: 'The estimated cost of the project or process. This should be a numerical value expressed in USD.'
 required: false
 translatable: false
 default_value: {  }

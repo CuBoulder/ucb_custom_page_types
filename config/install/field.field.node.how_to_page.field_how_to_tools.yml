@@ -8,8 +8,8 @@ id: node.how_to_page.field_how_to_tools
 field_name: field_how_to_tools
 entity_type: node
 bundle: how_to_page
-label: 'How-To Tools'
-description: ''
+label: Tools
+description: 'The tools needed to help build the project if any are needed.'
 required: false
 translatable: false
 default_value: {  }

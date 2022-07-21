@@ -10,8 +10,8 @@ id: node.how_to_page.body
 field_name: body
 entity_type: node
 bundle: how_to_page
-label: Body
-description: ''
+label: Introduction
+description: 'Introduction to the project or process. This should outline basic information on what the project/process is or why one should do it.'
 required: false
 translatable: true
 default_value: {  }

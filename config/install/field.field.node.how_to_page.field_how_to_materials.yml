@@ -8,8 +8,8 @@ id: node.how_to_page.field_how_to_materials
 field_name: field_how_to_materials
 entity_type: node
 bundle: how_to_page
-label: 'How-To Materials'
-description: ''
+label: Materials
+description: 'The materials needed to build the project/process if they are required.'
 required: false
 translatable: false
 default_value: {  }
