@@ -11,12 +11,10 @@ dependencies:
     - field.field.node.ucb_article.field_ucb_article_summary
     - field.field.node.ucb_article.field_ucb_article_tags
     - field.field.node.ucb_article.field_ucb_article_thumbnail
-    - image.style.large
     - node.type.ucb_article
   module:
     - entity_reference_revisions
     - link
-    - media
     - user
 id: node.ucb_article.default
 targetEntityType: node
