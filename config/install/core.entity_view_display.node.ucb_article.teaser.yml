@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.ucb_article.field_ucb_article_summary
     - field.field.node.ucb_article.field_ucb_article_tags
     - field.field.node.ucb_article.field_ucb_article_thumbnail
+    - field.field.node.ucb_article.field_ucb_related_articles_parag
     - node.type.ucb_article
   module:
     - user
@@ -49,3 +50,4 @@ hidden:
   field_ucb_article_external_url: true
   field_ucb_article_tags: true
   field_ucb_article_thumbnail: true
+  field_ucb_related_articles_parag: true

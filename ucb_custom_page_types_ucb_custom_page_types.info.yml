@@ -6,11 +6,12 @@ dependencies:
   - entity_reference_revisions
   - field
   - field_group
-  - image
   - link
   - media
   - media_library
+  - menu_ui
   - node
+  - options
   - paragraphs
   - path
   - pathauto
@@ -18,7 +19,9 @@ dependencies:
   - taxonomy
   - telephone
   - text
+  - ucb_custom_page_types
   - ucb_custom_paragraphs
   - user
-version: '1.0.16'
+  - webform
+version: 1.0.15
 package: 'UCB Custom Page Types'
